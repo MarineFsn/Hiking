@@ -58,7 +58,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id'])) {
 
 <body>
     <fieldset class="p-6 bg-white shadow-md rounded">
-        <legend class="text-xl font-bold mb-4">Update Hiking</legend>
         <form action="update.php" method="POST">
 
             <input type="hidden" name="id" value="<?php echo $hiking['id']; ?>">
@@ -100,7 +99,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id'])) {
         </form>
     </fieldset>
 
-    </fieldset>
 </body>
 <?php include "./partials/footer.php" ?>
 

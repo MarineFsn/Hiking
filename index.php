@@ -30,8 +30,6 @@ $hikingData = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </header>
 
 
-
-
 <body class="bg-gray-100">
     <div class="flex justify-evenly flex-wrap">
         <?php foreach ($hikingData as $hiking) { ?>
