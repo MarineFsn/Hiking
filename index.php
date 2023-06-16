@@ -11,14 +11,18 @@ $hikingData = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <html>
 
 <head>
-    <title>Hiking List</title>
+    <title>[HIKE]Réunion</title>
     <link rel="stylesheet" href="output.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
 
 <header class="bg-gray-200 py-4">
     <div class="container mx-auto flex justify-between items-center px-4">
-        <h1 class="text-2xl font-bold text-gray-800">[HIKE]Réunion</h1>
+        <div class="flex items-center space-x-4">
+            <img src="./assets/randologo.png" class="w-14 h-14">
+            <h1 class="text-2xl font-bold text-gray-800">[HIKE]Réunion</h1>
+        </div>
         <div class="flex items-center space-x-4">
             <a href="index.php"
                 class="text-2xl font-bold text-gray-800 border border-gray-800 rounded-md px-4 py-2 transition-colors duration-300 hover:bg-gray-800 hover:text-white">Home</a>
@@ -28,6 +32,10 @@ $hikingData = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 </header>
+
+
+
+
 
 
 <body class="bg-gray-100">
@@ -96,6 +104,7 @@ $hikingData = $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
     }
     ?>
+
 </body>
 
 <footer>
