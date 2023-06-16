@@ -33,11 +33,6 @@ $hikingData = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
 </header>
 
-
-
-
-
-
 <body class="bg-gray-100">
     <div class="flex justify-evenly flex-wrap">
         <?php foreach ($hikingData as $hiking) { ?>
@@ -45,6 +40,7 @@ $hikingData = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div class="px-6 py-4">
                     <h2 class="font-bold text-xl mb-2">
                         <?php echo $hiking['name']; ?>
+                        <img src="./assets/paysage.jpg" class="border border-gray-300 rounded">
                     </h2>
                     <p class="text-gray-700">Difficulty:
                         <?php echo $hiking['difficulty']; ?>
