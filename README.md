@@ -7,7 +7,7 @@
 
 This repository contains a PHP and MySQL-based web app for listing hiking adventures on the beautiful island of Réunion.
 
-##Goals:
+#Goals:
 Create a functional web app for listing hiking adventures.
 Utilize PHP and MySQL to manage adventure data.
 Populate the hiking table with 5 initial hiking adventures.
